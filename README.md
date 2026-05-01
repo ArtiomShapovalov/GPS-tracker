@@ -4,7 +4,7 @@ Features
 - Tracker detail page with latitude and longitude
 - CoreData persistence
 - Polling for coordinates
-- Map with real-time updates
+- Map with real-time updates (lat/lng/heading updates)
 - Pull to refresh
 - Encryption for session hash
 - Console logging of http calls
