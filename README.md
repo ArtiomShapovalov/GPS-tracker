@@ -8,6 +8,8 @@ Features
 - Pull to refresh
 - Encryption for session hash
 - Console logging of http calls
+- Offline/Online/Loading indicator
+- Snackbar for load error
 
 How to start
 -
