@@ -10,6 +10,7 @@ Features
 - Console logging of http calls
 - Offline/Online/Loading indicator
 - Snackbar for load error
+- Refresh of expired session
 
 How to start
 -
