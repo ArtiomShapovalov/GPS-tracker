@@ -11,7 +11,7 @@ final class API {
     static let shared = API()
     
     var domain: String { "api.eu.navixy.com" }
-    let encription = Encryption()
+    var encription = Encryption()
     let decoder: JSONDecoder = {
         let d = JSONDecoder()
         d.keyDecodingStrategy = .convertFromSnakeCase
@@ -30,8 +30,8 @@ final class API {
     }
     
     func getHash() async throws -> String {
-        if let hash = ud.string(forKey: udHashKey) {
-            return hash
+        if let hash = ud.data(forKey: udHashKey) {
+            return try encription.decryptString(hash)
         }
         
         return try await userAuth()

@@ -33,7 +33,8 @@ extension API {
             throw Fetcher<AuthBody>.Failure.unexpectedResponse
         }
         
-        ud.set(hashStr, forKey: udHashKey)
+        let hashData = try encription.encryptString(hashStr)
+        ud.set(hashData, forKey: udHashKey)
         return hashStr
     }
 }
