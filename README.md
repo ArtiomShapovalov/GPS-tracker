@@ -6,6 +6,7 @@ Features
 - Polling for coordinates
 - Map with real-time updates
 - Pull to refresh
+
 How to start
 -
 1. Use XCode 26+
